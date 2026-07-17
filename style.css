@@ -297,6 +297,10 @@ img {
   color: var(--color-vermilion);
 }
 
+.cast-team-title-main {
+  color: var(--color-navy);
+}
+
 .cast-team-title-b {
   color: var(--color-gold);
 }
@@ -306,6 +310,15 @@ img {
   grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   gap: 1rem 1.5rem;
   text-align: center;
+}
+
+.cast-list + .cast-list {
+  margin-top: 1rem;
+}
+
+.cast-list-center {
+  grid-template-columns: repeat(3, minmax(140px, 200px));
+  justify-content: center;
 }
 
 .cast-list li {
@@ -490,10 +503,27 @@ img {
 }
 
 /* ===== Access ===== */
+.access-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
 .access-info {
   max-width: 480px;
-  margin: 0 auto;
   text-align: center;
+}
+
+.access-map {
+  flex: 1;
+  max-width: 420px;
+}
+
+.access-map img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
 }
 
 .venue-name {
@@ -647,5 +677,17 @@ img {
 
   .cast-list {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cast-list-center {
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+  }
+
+  .access-layout {
+    flex-direction: column;
+  }
+
+  .access-map {
+    max-width: 100%;
   }
 }
