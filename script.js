@@ -64,4 +64,30 @@ document.addEventListener('DOMContentLoaded', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
+  /* ---------- 地図の拡大表示 ---------- */
+  const mapImage = document.getElementById('mapImage');
+  const mapModal = document.getElementById('mapModal');
+  const mapModalClose = document.getElementById('mapModalClose');
+
+  const openMapModal = () => {
+    mapModal.classList.add('open');
+  };
+
+  const closeMapModal = () => {
+    mapModal.classList.remove('open');
+  };
+
+  mapImage.addEventListener('click', openMapModal);
+  mapModalClose.addEventListener('click', closeMapModal);
+  mapModal.addEventListener('click', (event) => {
+    if (event.target === mapModal) {
+      closeMapModal();
+    }
+  });
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      closeMapModal();
+    }
+  });
+
 });
