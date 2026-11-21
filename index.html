@@ -1,283 +1,372 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>枯レヌ、野ノ花 | 演劇企画『円端』</title>
-<link rel="stylesheet" href="style.css">
-<link rel="icon" type="image/png" href="photo/favicon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>y.uto — AI Efficiency Portfolio</title>
+  <link rel="icon" type="image/png" href="https://res.cloudinary.com/dmpe2eu0u/image/upload/v1782653983/favicon_lxhcuu.png" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<header class="site-header">
-  <div class="header-inner">
-    <a href="#top" class="logo">
-      <span class="logo-sub">演劇企画『円端』</span>
-      <span class="logo-main">枯レヌ、野ノ花</span>
-    </a>
-    <button class="menu-toggle" id="menuToggle" aria-label="メニューを開く" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-    <nav class="site-nav" id="siteNav">
-      <ul>
-        <li><a href="#story">STORY</a></li>
-        <li><a href="#cast">CAST</a></li>
-        <li><a href="#schedule">SCHEDULE</a></li>
-        <li><a href="#ticket">TICKET</a></li>
-        <li><a href="#access">ACCESS</a></li>
-        <li><a href="#staff">STAFF</a></li>
-        <li><a href="#form">FORM</a></li>
+  <!-- Navigation -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <span class="nav-logo">y.uto</span>
+      <ul class="nav-links">
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#deliverables">Deliverables</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-    </nav>
-  </div>
-</header>
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <ul class="mobile-menu" id="mobileMenu">
+      <li><a href="#profile">Profile</a></li>
+      <li><a href="#works">Works</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#deliverables">Deliverables</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-<main id="top">
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow fade-in">AI Efficiency Specialist</p>
+      <h1 class="hero-title fade-in delay-1">業務を、AIで変える。</h1>
+      <p class="hero-sub fade-in delay-2">
+        生成AIツールを活用した業務効率化・自動化のスペシャリスト。<br />
+        ワークフローからアプリ開発まで、現場に即した改善を提案します。
+      </p>
+      <a href="#works" class="btn-primary fade-in delay-3">Works を見る</a>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
 
-  <section class="hero">
-    <div class="hero-inner fade-in">
-      <div class="hero-text">
-        <p class="hero-eyebrow">演劇企画『円端』</p>
-        <h1 class="hero-title">枯レヌ、<br>野ノ花</h1>
-        <p class="hero-date">2026年9月22日（火）〜27日（日）</p>
-        <p class="hero-venue">ウエストエンドスタジオ</p>
-        <div class="hero-thanks">
-          <p class="hero-thanks-note">9月27日（日）に、千秋楽を迎えました！</p>
-          <p class="hero-thanks-message">ご来園ありがとうございました！！</p>
+  <!-- Profile -->
+  <section id="profile" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Profile</h2>
+      <div class="profile-grid">
+        <div class="profile-avatar reveal">
+          <div class="avatar-ring">
+            <img src="https://res.cloudinary.com/dmpe2eu0u/image/upload/v1780488167/IMG_4549_x2za4v.jpg" alt="y.uto プロフィール写真" class="avatar-img" />
+          </div>
         </div>
-      </div>
-      <img src="photo/hyoshi1.jpg" alt="「枯レヌ、野ノ花」表紙イラスト" class="hero-cover">
-    </div>
-  </section>
-
-  <section id="story" class="section">
-    <div class="section-inner">
-      <h2 class="section-title fade-in">STORY</h2>
-      <div class="story-text fade-in">
-        <p>第二次世界大戦、追い込まれ始めた日本<br>
-        上野動物園では、戦時<strong>猛獣殺処分</strong>が決まった。</p>
-        <p>動物達の<span class="text-blue">命</span>を奪う選択を迫られた飼育員達。<br>
-        少しでも限られた時間を延ばそうと来園者を楽しませようと奮闘する。<br>
-        絵本や教科書にも載っている実話を基に<span class="text-red">猫</span>かれた、</p>
-        <p class="story-catch">命の意味を問う物語。</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="cast" class="section section-alt">
-    <div class="section-inner">
-      <h2 class="section-title fade-in">CAST</h2>
-      <div class="cast-group cast-group-team fade-in">
-        <h3 class="cast-team-title cast-team-title-a"><span class="team-icon">🦁</span>Aチーム</h3>
-        <ul class="cast-list cast-list-team">
-          <li>坂本 七海</li>
-          <li>前田 彩水</li>
-          <li>柳 胡桃</li>
-          <li>大原 千里</li>
-          <li>空見 怜奈</li>
-        </ul>
-      </div>
-
-      <div class="cast-group cast-group-team fade-in">
-        <h3 class="cast-team-title cast-team-title-b"><span class="team-icon">🐊</span>Bチーム</h3>
-        <ul class="cast-list cast-list-team">
-          <li>永嶋 かのん</li>
-          <li>みゆき</li>
-          <li>吉田 愛花</li>
-          <li>斎藤 誠</li>
-          <li>小松 優音</li>
-        </ul>
-      </div>
-
-      <div class="cast-group cast-group-team fade-in">
-        <h3 class="cast-team-title cast-team-title-main"><span class="team-icon">🎭</span>MAIN CAST</h3>
-        <ul class="cast-list cast-list-center">
-          <li>端本 宇良</li>
-          <li>岡井 亮</li>
-          <li>花村 咲歩</li>
-          <li>辻井 亮人</li>
-        </ul>
-        <ul class="cast-list cast-list-three">
-          <li>井出 志龍</li>
-          <li>加藤 宙夢</li>
-          <li>鷹宮 友紀</li>
-          <li>やなぎ 勝美</li>
-          <li>平野 ちひろ</li>
-          <li>井 公亮</li>
-        </ul>
-        <ul class="cast-list cast-list-solo">
-          <li>井上 高志</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section id="schedule" class="section">
-    <div class="section-inner">
-      <h2 class="section-title fade-in">SCHEDULE</h2>
-      <p class="schedule-range fade-in">2026年9月22日（火）〜27日（日）</p>
-
-      <div class="table-scroll fade-in">
-        <table class="schedule-table" id="scheduleTable">
-          <thead>
-            <tr>
-              <th>時間</th>
-              <th class="day-col" data-day="9/22">9/22（火）</th>
-              <th class="day-col" data-day="9/23">9/23（水）</th>
-              <th class="day-col" data-day="9/24">9/24（木）</th>
-              <th class="day-col" data-day="9/25">9/25（金）</th>
-              <th class="day-col" data-day="9/26">9/26（土）</th>
-              <th class="day-col" data-day="9/27">9/27（日）</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th>13:00</th>
-              <td data-day="9/22">—</td>
-              <td class="cast-b" data-day="9/23">B</td>
-              <td data-day="9/24">—</td>
-              <td data-day="9/25">—</td>
-              <td data-day="9/26">—</td>
-              <td class="cast-b" data-day="9/27">B</td>
-            </tr>
-            <tr>
-              <th>13:30</th>
-              <td data-day="9/22">—</td>
-              <td data-day="9/23">—</td>
-              <td data-day="9/24">—</td>
-              <td class="cast-a" data-day="9/25">A</td>
-              <td data-day="9/26">—</td>
-              <td data-day="9/27">—</td>
-            </tr>
-            <tr>
-              <th>18:30</th>
-              <td data-day="9/22">—</td>
-              <td data-day="9/23">—</td>
-              <td class="cast-b" data-day="9/24">B</td>
-              <td data-day="9/25">—</td>
-              <td class="cast-a" data-day="9/26">A</td>
-              <td data-day="9/27">—</td>
-            </tr>
-            <tr>
-              <th>19:00</th>
-              <td class="cast-a" data-day="9/22">A</td>
-              <td data-day="9/23">—</td>
-              <td data-day="9/24">—</td>
-              <td data-day="9/25">—</td>
-              <td data-day="9/26">—</td>
-              <td data-day="9/27">—</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <ul class="schedule-notes fade-in">
-        <li>※ 開場は開演の30分前</li>
-        <li>※ 公演時間は1時間40分予定</li>
-        <li>※ 一部ダブルキャストでの公演となります</li>
-        <li>※ 今公演はLittle Voice LIFE＋Lとの合同企画です。Little Voice LIFE＋Lの公演時間については各種SNS・HPでご確認ください</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="ticket" class="section section-alt">
-    <div class="section-inner">
-      <h2 class="section-title fade-in">TICKET</h2>
-      <table class="ticket-table fade-in">
-        <tbody>
-          <tr>
-            <th>全席自由</th>
-            <td class="price">4,000円</td>
-          </tr>
-          <tr>
-            <th>共通チケット<br><span class="small">（円端＋Little Voice LIFE＋L）</span></th>
-            <td class="price">6,000円</td>
-          </tr>
-        </tbody>
-      </table>
-      <ul class="ticket-notes fade-in">
-        <li>※ 未就学児入場無料</li>
-        <li>※ 共通チケットは各公演それぞれ1公演に入場できるチケットになります</li>
-        <li>※ 数に限りがありますので、席数に関係なく販売を終了する場合がございます</li>
-      </ul>
-      <div class="ticket-buy fade-in">
-        <a href="https://theater-ticket.jp/reservation/?fid=48&ut=yafAnEoPoC4mufrfAlaI" class="ticket-buy-btn" target="_blank" rel="noopener noreferrer">チケット購入</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="access" class="section">
-    <div class="section-inner">
-      <h2 class="section-title fade-in">ACCESS</h2>
-      <div class="access-layout fade-in">
-        <div class="access-info">
-          <p class="venue-name">ウエストエンドスタジオ</p>
-          <p>〒165-0026　東京都中野区新井5-1-1<br>
-          TEL：03-5942-5858</p>
-          <ul>
-            <li>JR中央線：中野駅より徒歩15分</li>
-            <li>西武新宿線：新井薬師前駅より徒歩7分</li>
-          </ul>
-        </div>
-        <div class="access-map">
-          <img src="photo/map.png" alt="ウエストエンドスタジオ 地図" class="zoomable-map" id="mapImage">
+        <div class="profile-body reveal delay-1">
+          <h3 class="profile-name">y.uto</h3>
+          <p class="profile-quote">
+            「もっと楽に、もっと速く」を追求し、生成AIを活用した業務改善に取り組んでいます。<br /><br />
+            ChatGPT・Claude・Difyなど複数のAIツールを実務で使い倒し、チャットボット・ワークフロー・Webアプリまでゼロから内製開発。
+            「難しいことを難しいままにしない」をモットーに、現場の課題をシンプルな仕組みで解決します。<br /><br />
+            現在は生成AIスクールで体系的なスキルを習得中。社内へのAI活用展開を視野に、提案・設計・実装まで一気通貫で動ける人材を目指しています。
+          </p>
+          <table class="profile-table">
+            <tr><th>Role</th><td>コールセンター管理 / AI推進</td></tr>
+            <tr><th>Learning</th><td>生成AIスクール 受講中</td></tr>
+            <tr><th>Goal</th><td>AI活用の社内展開 / AI事業立ち上げ</td></tr>
+            <tr><th>Location</th><td>Tokyo, Japan</td></tr>
+          </table>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="staff" class="section section-alt">
-    <div class="section-inner">
-      <h2 class="section-title fade-in">STAFF</h2>
-      <table class="staff-table fade-in">
-        <tbody>
-          <tr><th>原　作</th><td>内堀 優一「ニコニコさんが泣いた日」</td></tr>
-          <tr><th>演出・脚色</th><td>端本 宇良</td></tr>
-          <tr><th>舞台監督</th><td>岡井 亮</td></tr>
-          <tr><th>照　明</th><td>佐藤 江未</td></tr>
-          <tr><th>音　響</th><td>原田 泰男</td></tr>
-          <tr><th>イラスト</th><td>勝倉 大和</td></tr>
-          <tr><th>ページ</th><td>鷹宮 友紀</td></tr>
-        </tbody>
-      </table>
+  <!-- Skills -->
+  <section id="skills" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title reveal">Tool Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-item reveal">
+          <div class="skill-header">
+            <span class="skill-name">Claude</span>
+            <span class="skill-use">Coding / Analysis</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-fill="100"></div></div>
+          <div class="skill-stars">★★★★★</div>
+        </div>
+
+        <div class="skill-item reveal delay-1">
+          <div class="skill-header">
+            <span class="skill-name">Chat GPT</span>
+            <span class="skill-use">Text / Creative</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-fill="100"></div></div>
+          <div class="skill-stars">★★★★★</div>
+        </div>
+
+        <div class="skill-item reveal delay-2">
+          <div class="skill-header">
+            <span class="skill-name">Gemini</span>
+            <span class="skill-use">Search / Data</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-fill="80"></div></div>
+          <div class="skill-stars">★★★★☆</div>
+        </div>
+
+        <div class="skill-item reveal delay-1">
+          <div class="skill-header">
+            <span class="skill-name">Copilot</span>
+            <span class="skill-use">Office / M365</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-fill="80"></div></div>
+          <div class="skill-stars">★★★★☆</div>
+        </div>
+
+        <div class="skill-item reveal delay-2">
+          <div class="skill-header">
+            <span class="skill-name">Dify</span>
+            <span class="skill-use">Workflow / App</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-fill="80"></div></div>
+          <div class="skill-stars">★★★★☆</div>
+        </div>
+
+        <div class="skill-item reveal delay-3">
+          <div class="skill-header">
+            <span class="skill-name">make</span>
+            <span class="skill-use">Automation</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-fill="60"></div></div>
+          <div class="skill-stars">★★★☆☆</div>
+        </div>
+
+      </div>
     </div>
   </section>
 
-  <section id="form" class="section section-alt">
-    <div class="section-inner">
-      <h2 class="section-title fade-in">FORM / お問い合わせ</h2>
-      <ul class="contact-list fade-in">
-        <li>メール：<a href="mailto:engekikikaku.mappa@gmail.com">engekikikaku.mappa@gmail.com</a></li>
-        <li>公式HP：<a href="http://www.engekikikakumappa.com/index.html" target="_blank" rel="noopener">www.engekikikakumappa.com</a></li>
-      </ul>
+  <!-- Works -->
+  <section id="works" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Works</h2>
+      <div class="works-grid">
+
+        <article class="work-card reveal">
+          <div class="work-body">
+            <div class="work-number">01</div>
+            <div class="work-tags">
+              <span class="tag">Chatbot</span>
+              <span class="tag">Dify</span>
+            </div>
+            <h3 class="work-title">AI チャットボット</h3>
+            <p class="work-desc">
+              Difyを用いて構築した対話型AIチャットボット。RAGアーキテクチャにより社内ナレッジに基づいた回答を実現。問い合わせ対応の自動化・効率化を目的に設計。<br /><br />
+              ECサイトをイメージして作成しました。「配送料いくらですか？」「返品出来ますか？」などを入力してお試しください。
+            </p>
+            <p class="work-tech"><strong>使用技術:</strong> Dify / RAG / LLM / 問い合わせ自動化</p>
+            <a href="https://udify.app/chat/mJShgDXmByzJN4gk" target="_blank" rel="noopener" class="work-link">
+              デモを試す <span class="arrow">→</span>
+            </a>
+          </div>
+          <div class="work-demo">
+            <iframe
+              src="https://www.youtube.com/embed/0yesxKzCpPU"
+              title="ECサイト チャットボット デモ"
+              class="demo-video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+        </article>
+
+        <article class="work-card reveal delay-1">
+          <div class="work-body">
+            <div class="work-number">02</div>
+            <div class="work-tags">
+              <span class="tag">Landing Page</span>
+              <span class="tag">Claude Code</span>
+            </div>
+            <h3 class="work-title">舞台公演 公式サイト</h3>
+            <p class="work-desc">
+              Claude Codeで開発した舞台「闇に咲く、光の詩」の公式LP。あらすじ・キャスト・公演情報・チケット購入導線をワンページに凝縮。ダークトーンの演劇的デザインを採用。
+            </p>
+            <p class="work-tech"><strong>使用技術:</strong> Claude Code / HTML / CSS / GitHub Pages / LP制作</p>
+            <a href="https://arther00790-blip.github.io/theater/" target="_blank" rel="noopener" class="work-link">
+              サイトを見る <span class="arrow">→</span>
+            </a>
+          </div>
+          <div class="work-demo">
+            <img src="https://res.cloudinary.com/dmpe2eu0u/image/upload/v1780488168/%E9%97%87%E3%81%AB%E5%92%B2%E3%81%8F_%E5%85%89%E3%81%AE%E8%A9%A9_h7srm4.png" alt="闇に咲く、光の詩 公式サイト スクリーンショット" class="demo-img" />
+          </div>
+        </article>
+
+        <article class="work-card reveal delay-2">
+          <div class="work-body">
+            <div class="work-number">03</div>
+            <div class="work-tags">
+              <span class="tag">Web App</span>
+              <span class="tag">Claude Code</span>
+            </div>
+            <h3 class="work-title">社内打ち合わせ予約システム</h3>
+            <p class="work-desc">
+              Claude Codeで開発した社内向け日程調整アプリ「MeetReserve」。管理者・マネジメント・エンジニアの3ロールを持ち、予約承認フローを実装。ゼロからの内製開発を実現。
+            </p>
+            <p class="work-tech"><strong>使用技術:</strong> Claude Code / JavaScript / 3ロール管理 / 承認フロー / GitHub Pages</p>
+            <a href="https://arther00790-blip.github.io/reserve_scadule/" target="_blank" rel="noopener" class="work-link">
+              アプリを見る <span class="arrow">→</span>
+            </a>
+          </div>
+          <div class="work-demo">
+            <iframe
+              src="https://www.youtube.com/embed/Wm9LQxkVLDY"
+              title="社内打ち合わせ予約システム デモ"
+              class="demo-video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+        </article>
+
+        <article class="work-card reveal delay-3">
+          <div class="work-body">
+            <div class="work-number">04</div>
+            <div class="work-tags">
+              <span class="tag">Web App</span>
+              <span class="tag">Claude Code</span>
+            </div>
+            <h3 class="work-title">タレントマッチングサービス「StageLink」</h3>
+            <p class="work-desc">
+              Claude Codeで開発した、タレントと広告・映像制作会社をつなぐマッチングサービスのデモ。自己紹介動画でタレントの「らしさ」を伝え、制作会社は雰囲気や話し方を確かめてから選考可能。案件検索・応募、スカウト、案件掲載、応募者管理までを実装し、タレント／企業の視点切替でそれぞれの導線を体験できます。
+            </p>
+            <p class="work-tech"><strong>使用技術:</strong> Claude Code / HTML / CSS / JavaScript / GitHub Pages / マッチング設計</p>
+            <a href="https://arther00790-blip.github.io/talent_matching/index.html" target="_blank" rel="noopener" class="work-link">
+              サイトを見る <span class="arrow">→</span>
+            </a>
+          </div>
+          <div class="work-demo">
+            <!-- TODO: photo/ は .gitignore 対象のため、公開前に Cloudinary のURLへ差し替える -->
+            <img src="photo/stagelink.png" alt="StageLink トップページ スクリーンショット" class="demo-img" loading="lazy" />
+          </div>
+        </article>
+
+      </div>
     </div>
   </section>
 
-</main>
+  <!-- Achievements: 実際にクライアントに採用された制作実績 -->
+  <section id="achievements" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Achievements</h2>
+      <div class="works-grid">
 
-<footer class="site-footer">
-  <div class="footer-inner">
-    <h3>協力</h3>
-    <p class="cooperation">
-      読売カルチャー錦糸町<br>
-      アンサンブル　：　未夏　／　ゆき　／　名取 可愛<br>
-      オフィス三井　／　劇団俳優座<br>
-      ユニオンエンタテインメント　／　テアトルRUIプロダクション<br>
-      アクエリアスモデルズ　／　少年cycle　／　劇団ペガソルProject
-    </p>
-    <p class="copyright">© 2026 演劇企画『円端』「枯レヌ、野ノ花」All Rights Reserved.</p>
-  </div>
-</footer>
+        <article class="work-card reveal">
+          <div class="work-body">
+            <div class="work-tags">
+              <span class="tag tag-adopted">採用実績</span>
+              <span class="tag">Landing Page</span>
+              <span class="tag">Claude Code</span>
+            </div>
+            <h3 class="work-title">演劇企画『円端』「枯レヌ、野ノ花」公演サイト</h3>
+            <p class="work-desc">
+              実際に採用いただいた舞台公演の公式LP。第二次世界大戦中の上野動物園を舞台にした物語の世界観を伝えつつ、あらすじ・キャスト・公演スケジュール・チケット・アクセス・スタッフ・お問い合わせまでをワンページに集約。観客が迷わず情報にたどり着ける導線設計を重視しました。
+            </p>
+            <p class="work-tech"><strong>使用技術:</strong> Claude Code / HTML / CSS / GitHub Pages / LP制作</p>
+            <a href="https://arther00790-blip.github.io/karenu-nonoka/" target="_blank" rel="noopener" class="work-link">
+              サイトを見る <span class="arrow">→</span>
+            </a>
+          </div>
+          <div class="work-demo">
+            <!-- TODO: photo/ は .gitignore 対象のため、公開前に Cloudinary のURLへ差し替える -->
+            <img src="photo/karenu-nonoka.png" alt="枯レヌ、野ノ花 公演サイト スクリーンショット" class="demo-img" loading="lazy" />
+          </div>
+        </article>
 
-<button id="backToTop" class="back-to-top" aria-label="トップへ戻る">
-  <span>▲</span>
-</button>
+      </div>
+    </div>
+  </section>
 
-<div class="map-modal" id="mapModal">
-  <button class="map-modal-close" id="mapModalClose" aria-label="閉じる">&times;</button>
-  <img src="photo/map.png" alt="ウエストエンドスタジオ 地図（拡大）" id="mapModalImg">
-</div>
+  <!-- Deliverables -->
+  <section id="deliverables" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title reveal">Deliverables</h2>
+      <div class="deliverables-grid">
+        <div class="deliverable-card reveal">
+          <div class="deliverable-icon">⚙️</div>
+          <h3>ワークフロー</h3>
+          <p>Difyによる業務フロー自動化・RAG構築</p>
+        </div>
+        <div class="deliverable-card reveal delay-1">
+          <div class="deliverable-icon">🤖</div>
+          <h3>チャットボット</h3>
+          <p>社内FAQ・問い合わせ対応AI</p>
+        </div>
+        <div class="deliverable-card reveal delay-2">
+          <div class="deliverable-icon">💻</div>
+          <h3>Webアプリ</h3>
+          <p>Claude Codeで開発する業務支援アプリの内製化</p>
+        </div>
+        <div class="deliverable-card reveal delay-3">
+          <div class="deliverable-icon">🚀</div>
+          <h3>ランディングページ</h3>
+          <p>LP・社内ポータルの高速制作</p>
+        </div>
+        <div class="deliverable-card reveal delay-4">
+          <div class="deliverable-icon">📋</div>
+          <h3>秘書アプリ</h3>
+          <p>スケジュール管理・タスク整理など業務サポートアプリの開発</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<script src="script.js"></script>
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Contact</h2>
+      <p class="contact-lead reveal">お仕事のご相談・ご質問はこちらからお気軽にどうぞ。</p>
+      <form
+        class="contact-form reveal delay-1"
+        action="https://formspree.io/f/xeebkyrg"
+        method="POST"
+      >
+        <div class="form-group">
+          <label for="name">お名前 <span class="required">*</span></label>
+          <input type="text" id="name" name="name" placeholder="山田 太郎" required />
+        </div>
+        <div class="form-group">
+          <label for="email">メールアドレス <span class="required">*</span></label>
+          <input type="email" id="email" name="email" placeholder="example@email.com" required />
+        </div>
+        <div class="form-group">
+          <label for="tel">電話番号</label>
+          <input type="tel" id="tel" name="tel" placeholder="090-0000-0000" />
+        </div>
+        <div class="form-group">
+          <label for="message">お問い合わせ内容 <span class="required">*</span></label>
+          <textarea id="message" name="message" rows="6" placeholder="ご相談内容をご記入ください。" required></textarea>
+        </div>
+        <input type="hidden" name="_replyto" value="arther00790@gmail.com" />
+        <button type="submit" class="btn-submit">送信する <span class="arrow">→</span></button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <p class="footer-message">業務の課題をAIで解決したい方、まずは気軽にご相談ください。</p>
+      <p class="footer-copy">© 2025 y.uto — AI Efficiency Specialist</p>
+    </div>
+  </footer>
+
+  <!-- Page Top Button -->
+  <button id="pageTop" aria-label="ページトップへ戻る">↑</button>
+
+  <script src="script.js"></script>
 </body>
 </html>
